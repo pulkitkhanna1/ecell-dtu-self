@@ -1,0 +1,192 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+.swfirst{
+    height: 50%;
+    display: flex;
+    background-image: url(/image/startupweekendweb.jpg) ;
+    filter: grayscale(55%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-attachment: fixed;
+    align-items: center;
+    text-align: center;
+}
+
+.swfirst .content h2{
+    font-size: 6vw;
+}
+.swfirst .content p{
+    font-size: 1.4vw;
+    letter-spacing: 20px;
+    color: rgb(0, 27, 13);
+    font-weight: 500;
+}
+.swfirst .content span{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swday{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 70%;
+    padding: 30px;
+    flex-direction: row;
+
+    
+    
+}
+
+.swday .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    
+    background: #000;
+    overflow: hidden;
+
+}
+ 
+.swday .card input {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    outline: none;
+    z-index: 10;
+}
+
+.swday .card .swtoggle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    outline: none;
+    z-index: 10; 
+}
+
+.dayhead{
+    position: absolute;
+    top: 60px;
+    
+    text-align: center;
+    justify-content: center;
+}
+
+
+.swday .card input{
+    opacity: 0;
+}
+
+.swday .card .swtoggle{
+    pointer-events: none;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.5s;
+    text-align: center;
+
+    line-height: 43px;
+    font-size: 36px;
+    box-shadow: 0 0 0 0px #ffffff;
+}
+
+.swday .card input:checked ~ .swtoggle{
+    box-shadow: 0 0 0 500px #008559;
+    transform: rotate(135deg);
+}
+
+.dayhead{
+    display: inline-block !important;
+    text-transform: capitalize;
+    font-size: 5vw;
+}
+
+.swday .card {
+    
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swday .card .mntext{
+    color: #fff;
+    font: 1.7vw;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 5px;
+    
+    
+}
+
+.swday .card .swcontent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+.swday .card input:checked ~ .swcontent{
+   opacity: 1;
+    transition-delay: 0s;
+}
+
+.swday .card .swcontent{
+    margin: 0;
+    
+    color: #fff;
+}
+

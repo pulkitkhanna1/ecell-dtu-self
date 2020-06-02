@@ -1,0 +1,301 @@
+body{
+  width: 100% !important;
+}
+.parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.parallax h2{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 150px;
+  color: #fff;
+
+}
+@media (max-width:420px){
+  .parallax h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 100px;
+    color: #fff;}
+}
+
+
+/*------------------------------------------------1st vp--------------------------------------------*/
+#bg {
+    /* The image used */
+    background-image: url("../image/web\ back\ lg.jpg");
+
+
+    height: 100vh;
+    background-color: #222;
+
+    position: relative;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+
+
+
+/*-----------------------------------------------team card---------------------------------------------------------*/
+.teamvp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.pres{
+  padding-bottom: 30px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 350px;
+  
+  perspective: 2000px; 
+}
+
+@media (max-width:600px){
+
+  .flip-card {
+    padding-bottom: 12vh;
+  }
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(145, 0, 0);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+}
+
+.teamname{
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  top: 100%;
+  color: #fff;
+  width: 100%;
+
+}
+.cardback{
+
+
+  background: rgb(173, 0, 0);
+}
+/* Style the back side */
+.flip-card-back {
+ 
+  background-color: rgba(30, 143, 255, 0.144);
+  background-image: url(/image/front1.jpg);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  transform: rotateY(180deg);
+  overflow: hidden;
+}
+
+ .teamcont{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(34, 34, 34, 0.644);
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-100%);
+  
+
+} 
+.teamcont{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 11;
+  pointer-events: none;
+  
+  
+  }
+
+
+
+.flip-card:hover .teamname h1{
+  display: none;
+  transition: 0.2s;
+}
+.teamsoc{
+  display: none;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  transition: 0.5s;
+  padding: 0.5vh 0;
+  
+}
+
+.teamsoc img{
+  max-width: 25px;
+  display: none;
+  filter: invert(100);
+ 
+}
+.flip-card:hover .teamsoc img{
+  display: block;
+  transition: 0.2s;
+  transform: rotateY(180deg);
+}
+/* ========more info====== */
+.flip-card-back input {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 12;
+  opacity: 0;
+}
+
+.flip-card-front input {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 12;
+  opacity: 0;
+}
+.flip-card-front .teamtoggle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 12; 
+  pointer-events: none;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  transition: 0.5s;
+  text-align: center;
+  color: #fff;
+
+  line-height: 22px;
+  font-size: 18px;
+  box-shadow: 0 0 0 0px #ffffff;
+}
+.teamtoggle{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 20px;
+  outline: none;
+  z-index: 12; 
+  pointer-events: none;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  transition: 0.5s;
+  text-align: center;
+
+  line-height: 22px;
+  font-size: 18px;
+  box-shadow: 0 0 0 0px #ffffff;
+}
+
+
+
+.flip-card-back input:checked ~ .teamtoggle{
+  transform: rotate(135deg);
+}
+
+.flip-card-back input:checked ~ .teamcont{
+visibility: visible;
+transition: 0.5s ease-in-out;
+transform: translateY(0);
+}
+
+.vipres{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly!important;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.pres{
+  padding-bottom: 60px;
+}
+
+.designation{
+  border-bottom: 1px solid rgb(16, 139, 255);
+  border-top: 1px solid rgb(16, 139, 255);
+
+}
+
+.heads{
+  width: 90%;
+  text-decoration: none;
+  
+}
+.list-group a{
+  text-decoration: none;
+   color: rgb(0, 0, 0);
+}
+
+.list-group-item:hover {
+ 
+ color:  rgb(0, 120, 189);
+}
+

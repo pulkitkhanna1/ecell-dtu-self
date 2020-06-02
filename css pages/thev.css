@@ -1,0 +1,14 @@
+.headingmsg{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    font-size: 2.5em;
+    letter-spacing: 0.5em;
+    padding: 0;
+    margin: 0;
+}

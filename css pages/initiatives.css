@@ -1,0 +1,78 @@
+   body {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+     padding: 0;
+     margin: 0;
+     font-size: 14px;
+     line-height: 20px;
+   }
+   
+   .body {
+     background-color: #fff;
+     color: #000;
+     
+   }
+
+
+
+   /* ====================initiatives============================ */
+   .secondvp{
+     padding-top: 60vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: auto;
+     flex-wrap: wrap;
+
+   }
+
+    .secondvp .inicont{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+
+
+
+    }
+.secondvp .inirow{
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  border-bottom: 1px solid rgba(61, 61, 61, 0.651);
+}
+    .secondvp .inirow .iniimg{
+      width: 35vw;
+      min-width: 320px;
+      height: 65vh;
+      border: 2px solid #fff;
+      
+    }
+
+    .secondvp .inirow .initext{
+      width: 35vw;
+      min-width: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding:  20px;
+      
+
+    }
+    .initext p{
+      background-color: rgba(0, 0, 0, 0.568);
+      color: #fff;
+      padding: 10px;
+
+    }
+
+    .secondvp .inirow .iniimg img{
+      width: 100%;
+      height: 100%;
+    }
