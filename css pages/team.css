@@ -86,13 +86,9 @@ body{
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -105,17 +101,23 @@ body{
   background-color: rgb(145, 0, 0);
   color: black;
   display: flex;
+  
   justify-content: center;
   align-items: baseline;
+  overflow: hidden;
 
 }
 
 .teamname{
   background-color: rgb(0, 0, 0);
   position: relative;
-  top: 100%;
+  top: 87%;
   color: #fff;
   width: 100%;
+  z-index: 20;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 
 }
 .cardback{
@@ -123,16 +125,7 @@ body{
 
   background: rgb(173, 0, 0);
 }
-/* Style the back side */
-.flip-card-back {
- 
-  background-color: rgba(30, 143, 255, 0.144);
-  background-image: url(/image/front1.jpg);
-  background-size: cover;
-  color: rgb(255, 255, 255);
-  transform: rotateY(180deg);
-  overflow: hidden;
-}
+
 
  .teamcont{
   height: 100%;
@@ -146,7 +139,7 @@ body{
   visibility: hidden;
   transition: 0.5s ease-in-out;
   transform: translateY(-100%);
-  
+  color: #fff;
 
 } 
 .teamcont{
@@ -159,15 +152,23 @@ body{
   box-sizing: border-box;
   z-index: 11;
   pointer-events: none;
+ 
   
   
   }
 
+  .teamname h1{
+    font-size: 1.9em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .teamcont h1{
+    font-size: 1.6em;
+  }
 
-
-.flip-card:hover .teamname h1{
+  .flip-card-front input:checked ~ .teamname h1{
   display: none;
-  transition: 0.2s;
+ 
 }
 .teamsoc{
   display: none;
@@ -187,23 +188,12 @@ body{
   filter: invert(100);
  
 }
-.flip-card:hover .teamsoc img{
+.flip-card-front input:checked ~ .teamname img{
   display: block;
-  transition: 0.2s;
-  transform: rotateY(180deg);
+  
+  
 }
 /* ========more info====== */
-.flip-card-back input {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 20px;
-  right: 20px;
-  outline: none;
-  z-index: 12;
-  opacity: 0;
-}
-
 .flip-card-front input {
   position: absolute;
   width: 25px;
@@ -214,25 +204,8 @@ body{
   z-index: 12;
   opacity: 0;
 }
-.flip-card-front .teamtoggle {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 20px;
-  right: 20px;
-  outline: none;
-  z-index: 12; 
-  pointer-events: none;
-  border-radius: 50%;
-  background: rgb(0, 0, 0);
-  transition: 0.5s;
-  text-align: center;
-  color: #fff;
 
-  line-height: 22px;
-  font-size: 18px;
-  box-shadow: 0 0 0 0px #ffffff;
-}
+
 .teamtoggle{
   position: absolute;
   width: 25px;
@@ -246,7 +219,7 @@ body{
   background: rgb(0, 0, 0);
   transition: 0.5s;
   text-align: center;
-
+color: #fff;
   line-height: 22px;
   font-size: 18px;
   box-shadow: 0 0 0 0px #ffffff;
@@ -254,11 +227,11 @@ body{
 
 
 
-.flip-card-back input:checked ~ .teamtoggle{
+.flip-card-front input:checked ~ .teamtoggle{
   transform: rotate(135deg);
 }
 
-.flip-card-back input:checked ~ .teamcont{
+.flip-card-front input:checked ~ .teamcont{
 visibility: visible;
 transition: 0.5s ease-in-out;
 transform: translateY(0);
