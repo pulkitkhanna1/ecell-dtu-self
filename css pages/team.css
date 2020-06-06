@@ -166,7 +166,7 @@ body{
     font-size: 1.6em;
   }
 
-  .flip-card-front input:checked ~ .teamname h1{
+  .flip-card-front:hover .teamname h1{
   display: none;
  
 }
@@ -188,7 +188,7 @@ body{
   filter: invert(100);
  
 }
-.flip-card-front input:checked ~ .teamname img{
+.flip-card-front:hover  .teamname img{
   display: block;
   
   
@@ -227,11 +227,11 @@ color: #fff;
 
 
 
-.flip-card-front input:checked ~ .teamtoggle{
-  transform: rotate(135deg);
+.flip-card-front:hover .teamtoggle{
+  transform: rotate(180deg);
 }
 
-.flip-card-front input:checked ~ .teamcont{
+.flip-card-front:hover .teamcont{
 visibility: visible;
 transition: 0.5s ease-in-out;
 transform: translateY(0);
