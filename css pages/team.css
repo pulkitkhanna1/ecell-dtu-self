@@ -28,7 +28,7 @@ body{
 /*------------------------------------------------1st vp--------------------------------------------*/
 #bg {
     /* The image used */
-    background-image: url("../image/web\ back\ lg.jpg");
+    background-image: url("../image/ourTeam.jpeg");
 
 
     height: 100vh;
@@ -64,8 +64,8 @@ body{
   background-color: transparent;
   width: 300px;
   height: 350px;
-  
-  perspective: 2000px; 
+
+  perspective: 2000px;
 }
 
 @media (max-width:600px){
@@ -101,7 +101,7 @@ body{
   background-color: rgb(145, 0, 0);
   color: black;
   display: flex;
-  
+
   justify-content: center;
   align-items: baseline;
   overflow: hidden;
@@ -141,7 +141,7 @@ body{
   transform: translateY(-100%);
   color: #fff;
 
-} 
+}
 .teamcont{
   position: absolute;
   top: 0;
@@ -152,9 +152,9 @@ body{
   box-sizing: border-box;
   z-index: 11;
   pointer-events: none;
- 
-  
-  
+
+
+
   }
 
   .teamname h1{
@@ -168,7 +168,7 @@ body{
 
   .flip-card-front:hover .teamname h1{
   display: none;
- 
+
 }
 .teamsoc{
   display: none;
@@ -179,19 +179,19 @@ body{
   justify-content: space-evenly;
   transition: 0.5s;
   padding: 0.5vh 0;
-  
+
 }
 
 .teamsoc img{
   max-width: 25px;
   display: none;
   filter: invert(100);
- 
+
 }
 .flip-card-front:hover  .teamname img{
   display: block;
-  
-  
+
+
 }
 /* ========more info====== */
 .flip-card-front input {
@@ -213,7 +213,7 @@ body{
   top: 20px;
   right: 20px;
   outline: none;
-  z-index: 12; 
+  z-index: 12;
   pointer-events: none;
   border-radius: 50%;
   background: rgb(0, 0, 0);
@@ -260,7 +260,7 @@ transform: translateY(0);
 .heads{
   width: 90%;
   text-decoration: none;
-  
+
 }
 .list-group a{
   text-decoration: none;
@@ -268,7 +268,6 @@ transform: translateY(0);
 }
 
 .list-group-item:hover {
- 
+
  color:  rgb(0, 120, 189);
 }
-
