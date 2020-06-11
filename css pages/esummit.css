@@ -3,10 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../image/esummback.png);
+    background-image: url(/image/esummback.png);
     background-attachment: fixed;
     background-size: cover;
-
+   
     background-repeat: no-repeat;
 }
 
@@ -45,8 +45,8 @@
         font-size: 8vmax;
         color: #fff;
         font-weight: 600;
-
-    }
+    
+    } 
 
     .dtu{
         font-size: 3.5vmax;
@@ -62,7 +62,7 @@
     overflow: hidden;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .abesum video{
@@ -89,15 +89,15 @@ position: absolute;
     padding: 0;
     text-transform: uppercase;
     color: rgb(0, 0, 0);
+   
 
-
-
+    
 }
 
 .abesum .text p{
     margin: 0;
     padding: 0;
-
+    
 }
 
 /* ================counter================ */
@@ -135,7 +135,7 @@ position: absolute;
     .single-fact{
         text-align: center;
         width: 350px;
-
+        
         margin: 45px 0;
         padding:8px 16px;
         border-right: 1px solid #ddd;
@@ -176,7 +176,7 @@ position: absolute;
      text-transform: capitalize;
      font-size: 50px;
      font-weight: 700;
-
+     
 
  }
  html, body {
@@ -209,7 +209,7 @@ position: absolute;
   .gallery-thumbs {
     height: 20%;
     width: 60%;
-
+    
     box-sizing: border-box;
     padding: 10px 0;
   }
@@ -221,7 +221,7 @@ position: absolute;
       .gallery-thumbs {
         height: 20%;
         width: 80%;
-
+        
         box-sizing: border-box;
         padding: 10px 0;
       }
@@ -235,7 +235,7 @@ position: absolute;
       .gallery-thumbs {
         height: 10%;
         width: 80%;
-
+        
         box-sizing: border-box;
         padding: 10px 0;
       }
@@ -257,12 +257,12 @@ position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100% !important;
-
+    
 }
 
 .speaker .insitehead{
     color: #fff;
-
+    
     font-size: 50px;
     font-weight: 700;
 }
@@ -316,7 +316,7 @@ position: absolute;
       height: 100%;
       width: 100%;
       border-radius: 4px;
-
+      
   }
   .esumsp .containersp .cardsp .contentsp{
       position: relative;
@@ -444,7 +444,7 @@ max-width: 100%;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
+    
 }
 
 .contentday .cardcont{
@@ -458,7 +458,7 @@ max-width: 100%;
 
 .contentday .cardcont .cardday{
     position: relative;
-
+    
     background: #fff;
     display: flex;
 
@@ -497,7 +497,7 @@ max-width: 100%;
     bottom: 0;
     left: 0;
     width: 100%;
-
+   
     text-align: center;
     font-size: 6em;
     color: rgba(255,255,255,.1);
@@ -510,7 +510,7 @@ max-width: 100%;
 }
 .contentday .cardcont .cardday:hover .mainday img{
     max-width: 75px;
-
+   
 
 }
 
@@ -519,7 +519,7 @@ max-width: 100%;
 .contentday .cardcont .cardday .textday{
     color: rgba(0, 0, 0);
      text-align: center;
-
+ 
      filter: blur(3px);
      transition: 0.5s;
 
@@ -530,7 +530,7 @@ max-width: 100%;
     flex-direction: column;
     align-items: center;
    padding: 10px;
-
+  
 }
 
 .contentday .cardcont .cardday:hover .textday{
@@ -556,7 +556,7 @@ max-width: 100%;
         top: calc(50% - 50px);
         transition: 0.5s ease-in-out;
         background: #006280;
-
+    
     }
     .contentday .cardcont .cardday .mainday:before{
         content: attr(data-text);
@@ -564,7 +564,7 @@ max-width: 100%;
         bottom: 20%;
         left: 0;
         width: 100%;
-
+       
         text-align: center;
         font-size: 4em;
         color: rgba(255,255,255,.1);
@@ -590,7 +590,7 @@ max-width: 100%;
         height: 200px;
         left: 0;
         top: 0;
-
+    
     }
 
     .contentday .cardcont .cardday .mainday img,
@@ -611,7 +611,7 @@ max-width: 100%;
         bottom: 10%;
         left: 0;
         width: 100%;
-
+       
         text-align: center;
         font-size: 4em;
         color: rgba(255,255,255,.1);
@@ -620,7 +620,7 @@ max-width: 100%;
 
     .contentday .cardcont .cardday .textday h1{
         margin-bottom: 5px;
-
+    
         font-size: 24px;
     }
     .contentday .cardcont .cardday .textday p{
@@ -666,7 +666,7 @@ max-width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     transition: 0.5s;
-
+  
 }
 
 .whatt .container .card{
@@ -760,3 +760,5 @@ max-width: 100%;
 .whatt .container .card .content p{
     font-size: 0.96em;
 }
+
+
