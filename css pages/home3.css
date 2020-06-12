@@ -24,7 +24,7 @@
     background-color: rgba(0, 0, 0, 0.856);
     align-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -32,8 +32,8 @@
     position: relative;
     top: 0;
     left: 45%;
-    
-    
+
+
 }
 .dropdown-menu {
     display: block;
@@ -51,7 +51,7 @@
 
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
     color: #fff;
-    
+
     border-bottom: 1px solid rgb(96, 161, 235);
     transition: 0.5s;
 }
@@ -92,7 +92,7 @@
 .toggle:before{
     content: '';
     position: relative;
-    
+
     left: -10px;
     width: 30px;
     height: 30px;
@@ -164,12 +164,12 @@
 /*---------------------------first vp----------------------------------------*/
 #bg {
     /* The image used */
-    background-image: url("/image/web\ back\ lg.jpg");
-  
+    background-image: url("../image/phoga/image24.png");
+    filter: sepia(100%);
 
     height: 100vh;
     background-color: #222;
-    
+
     position: relative;
     width: 100%;
 
@@ -188,14 +188,55 @@
       position: relative;
       left: 50%;
       margin-left: -25%;
-      top: 50%;
+      top: 40%;
       margin-top: -25%;
-     
+
       z-index: 10;
       color: rgb(255, 255, 255);
      font-size: 10vw;
-     
+
   }
+
+  #bg h2{
+      display: inline-block;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      position: relative;
+
+
+      top: 45%;
+
+
+      z-index: 10;
+      color: rgb(255, 255, 255);
+     font-size: 3vw;
+
+  }
+@media (min-width: 900px){
+  #bg h2{
+      display: inline-block;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      position: relative;
+
+
+      top: 50%;
+
+
+      z-index: 10;
+      color: rgb(255, 255, 255);
+     font-size: 3vw;
+
+  }
+
+
+}
+
+
 /*---------------------------------------------------------------------perks vp----------------------------------------------------------------------------------*/
 
 
@@ -216,13 +257,13 @@
 }
 .secondvp img{
     width: 6000px;
-    
+
 }
 
 .seccontainer{
     position: relative;
     max-width: 100%;
-   
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-template-rows: minmax(100px, auto);
@@ -232,10 +273,10 @@
 }
 
 .seccontainer .secbox {
-    
+
     background-color: #333;
     display: grid;
-   
+
     place-items: center;
     text-align: center;
 
@@ -244,8 +285,8 @@
 }
 
 .seccontainer .secbox p{
-    
- 
+
+
 
     font-size: 15px;
 
@@ -253,7 +294,7 @@
 
 .seccontainer .secbox:hover{
     background-color: rgb(17, 17, 17);
-   
+
 }
 
 
@@ -362,7 +403,7 @@
     transform: scale(1.05);
     z-index: 1;
     box-shadow: 0 5px 20px rgba(0,0,0,1);
-   
+
 }
 
 .thicontainer .thibox:hover img{
@@ -442,7 +483,7 @@
 .thidetails .thicontent a:hover{
     background: #fff;
     color: #262626;
-   
+
 
 }
 
@@ -451,7 +492,7 @@
     height: 250px;
     filter: grayscale(55%);
     transition: 0.3s;
-    
+
 }
 
 
@@ -467,7 +508,7 @@
     display: none;
 }
     .thicontainer{
-        
+
         width: 100%;
         height: auto;
         padding: 1px;
@@ -506,7 +547,7 @@
 }
 
 @media(max-width: 587px){
-    
+
     .thicontainer{
         width: 100%;
         height: auto;
@@ -535,7 +576,7 @@
     min-height: 80vh;
     background: #fff;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    
+
     color:#000;
     margin: 0;
     padding: 0;
@@ -547,7 +588,7 @@
 
 /**--------------- Demo styles */
 
-  
+
  /*-------------------------------------------------------5th vp----------------------------------------------------*/
 
 
@@ -571,22 +612,22 @@ ul {
   align-content: center;
   justify-content: center;
   align-items: center;
-  
+
 
 }
 .team-area .single-item {
   margin-bottom: 30px;
-  
-  
+
+
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  
 
-  
+
+
 }
 
 .team-area .single-item .thumb {
@@ -595,7 +636,7 @@ ul {
   z-index: 1;
   width: 17vw;
   border-radius: 20% 2% 20% 2%;
-  
+
 }
 
 .team-area .single-item .thumb::after {
@@ -688,8 +729,8 @@ ul {
 
 .team-area .info {
   background: #ffffff none repeat scroll 0 0;
- 
-  
+
+
   padding: 10px 20px 20px;
   position: relative;
   text-align: center;
@@ -700,13 +741,13 @@ ul {
 
 .team-area .info .message {
   height: 20p;
-  
+
   line-height: 4px;
   margin-left: 0px;
   margin-top: -25px;
   position: absolute;
   left: 0%;
- 
+
   text-align: center;
   top: 0%;
 
@@ -718,7 +759,7 @@ ul {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 5%;
-  
+
 
   box-sizing: border-box;
   color: #ffffff;
@@ -736,8 +777,8 @@ ul {
   font-size: 1vw;
   padding-right: 7px;
   padding-top: 0px !important;
- 
-  
+
+
   text-transform: capitalize;
 }
 .team-area .info h4{
@@ -758,33 +799,33 @@ ul {
     .hpsecondflex{background-color: #fff;
         padding-top: 10vmax;
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     .tabs{ font-family: 'Dosis', sans-serif;
         text-align: center ;
         font-size:  20vmax;
         font-weight: 600;
         display: block;
     }
-    
-    
+
+
     /* tabs*/
     .second{ background: #fff}
-    .containertab{ 
+    .containertab{
         font-family: 'Dosis',sans-serif;
         line-height: 2vmax;
         max-width: 1200px;
-        
+
         padding-bottom: 6vmax;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-gap: 6vmax;
         margin: 0 auto;
-        
-    
+
+
     }
     .containertab .card{
         position: relative;
@@ -795,8 +836,8 @@ ul {
         background: linear-gradient(45deg, #0c7797, #04566e);
         box-shadow: 0 15px 60px rgba(0,0,0,0.5);
     }
-    
-    .containertab .card .face{ 
+
+    .containertab .card .face{
         position: absolute;
         bottom: 0;
         left: 0;
@@ -808,8 +849,8 @@ ul {
         align-items: center;
     }
 
-   
-    
+
+
     .containertab .card .face.face1{
         box-sizing: border-box;
         padding: 2.2vmax;
@@ -817,7 +858,7 @@ ul {
 
     .containertab .card .face.face1 .button{
         display: flex;
-        
+
         justify-content: center;
         text-align: center;
     }
@@ -825,15 +866,15 @@ ul {
         display: inline;
         padding-top: 2px !important;
         padding: 4px;
-        
+
         border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.267);
-        
-        
+
+
         text-decoration: none;
         font-size: 1.2vmax;
         color: rgb(255, 255, 255);
-    
+
         transition: 0.5s;
     }
     .containertab .card .face.face1 a:hover{
@@ -843,11 +884,11 @@ ul {
     .containertab .card .face.face1 p{
         margin: 0;
         padding:0;
-        font-size: 1.5vmax;
+        font-size: 1.8vmax;
         line-height: 2.2vmax;
         text-align: center;
-    
-    
+
+
     }
     .containertab .card .face.face2
     { background: #000;
@@ -858,7 +899,7 @@ ul {
         border-radius: 0px 0px 10px 10px ;
     }
     .containertab .card .face.face2 ::before
-    {	
+    {
         content: '';
         position: absolute;
         top: 0;
@@ -867,19 +908,19 @@ ul {
         height: 100%;
         background: rgba(255,255,255,.1);
     }
-    
+
     .containertab .card .face.face2 h2{
       margin: 0;
       padding: 0;
       font-size: 3vmax;
       color:#fff;
       word-spacing: 0.5vmax;
-    
+
     }
-    
+
     .containertab .card:hover .face.face2 h2{
         font-size: 2.5vmax;
-        
+
     }
 
     @media (max-width:991px){
@@ -893,9 +934,20 @@ ul {
             background: linear-gradient(45deg, #0c7797, #04566e);
             box-shadow: 0 15px 60px rgba(0,0,0,0.5);
         }
-        
+
     }
- 
+    @media (min-width:1275px){
+
+      .containertab .card .face.face1 p{
+          margin: 0;
+          padding:0;
+          font-size: 1.8vmax;
+          line-height: 2.2vmax;
+          text-align: center;
+
+
+      }
+    }
     /*--------------------------------------------------------ESUMMIT \'20 VP-------------------------------------*/
     .sixbanner{
         position: relative;
@@ -953,7 +1005,6 @@ background-color: rgba(0, 0, 0, 0.712);    }
     .sixthvphp .container{
         font-size: 18px;
         text-align: center;
-       
     }
     .sixthvphp a{
         display: flex;
@@ -971,7 +1022,7 @@ background-color: rgba(0, 0, 0, 0.712);    }
         color: rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
         transition: 0.1s;
-       
+
     }
 
 
@@ -984,8 +1035,8 @@ background-color: rgba(0, 0, 0, 0.712);    }
     height: 300vh;
     display: flex;
     margin: 0 !important;
-   
-  
+
+
 }
 .about-title{
     width: 50%;
@@ -997,7 +1048,7 @@ background-color: rgba(0, 0, 0, 0.712);    }
     justify-content: center;
     align-items: center;
     margin-top: 0 !important;
- 
+
 }
 
 .about-title .button{
@@ -1005,12 +1056,12 @@ background-color: rgba(0, 0, 0, 0.712);    }
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
 
 
 .about-title .button a{display: inline;
-  
+
     text-decoration: none;
     padding-top: 4px !important;
     padding: 4px;
@@ -1041,7 +1092,6 @@ background-color: rgba(0, 0, 0, 0.712);    }
     color: #fff;
     text-shadow: 0 0 2px #000000;
     background-color: rgba(0, 0, 0, 0.89);
-    
 }
 
 .about-pages div> p{
@@ -1051,18 +1101,16 @@ background-color: rgba(0, 0, 0, 0.712);    }
 }
 
 .about-pages div:nth-child(1){
-    background-image: url(/image/swhp/3.png );
+    background-image: url(../image/swhp/3.png );
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+     background-position: center;
     background-attachment: fixed;
     filter: grayscale(100%);
 
-    
-    
 }
 .about-pages div:nth-child(2){
-    background-image: url(/image/swhp/2.png);
+    background-image: url(../image/swhp/2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -1070,9 +1118,10 @@ background-color: rgba(0, 0, 0, 0.712);    }
     filter: grayscale(100%);
 }
 .about-pages div:nth-child(3){
-    background-image: url(/image/swhp/4.png);
+    background-image: url(../image/swhp/4.png);
     background-repeat: no-repeat;
     background-size: cover;
+
     background-size: cover;
     background-attachment: fixed;
     filter: grayscale(100%);
@@ -1081,8 +1130,9 @@ background-color: rgba(0, 0, 0, 0.712);    }
     background: rgba(0, 0, 0, 0.233);
     padding: 5px;
     text-align: center;
-   
+
 }
+
 
 .imgbackexp{
     z-index: -200;
@@ -1119,11 +1169,10 @@ html,body{
   .swi1 .slidetext{
       font-size: 7vw;
       color: white;
-      background-color: rgba(0, 0, 0, 0.233);
   }
   .swi1 .swiper-slide {
     text-align: center;
-    
+
     font-size: 18px;
     background: rgb(0, 0, 0);
 
@@ -1147,23 +1196,20 @@ html,body{
   }
 
   .swi1 .s2{
-      background-image: url(/image/sw\ 10.png);
-      background-size: cover;
+      background-image: url(../image/swimage/swimage1.png);
       filter: grayscale(100%);
-      
+      background-size: cover;
   }
 
   .swi1 .s3{
-    background-image: url(/image/sw6.png );
-    background-size: cover;
-    background-position: center;
+    background-image: url(../image/swimage/swimage2.png);
     filter: grayscale(100%);
+    background-size: cover;
 }
 .swi1 .s4{
-    background-image: url(/image/SW\ back.jpg );
+    background-image: url(../image/swimage/swimage3.png);
+    filter:grayscale(100%);
     background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
 }
 
 
@@ -1171,8 +1217,8 @@ html,body{
 /*--------------------------------------------------------startupweekend media quaery----------------------------------------------------*/
 
 @media (max-width: 991px){
-       
-        
+
+
         .about{
             display: none;
         }
@@ -1199,7 +1245,7 @@ body {
 
 .swi2 .swiper-container {
     width: 10%;
-    
+
     height: 80vh;
 }
 
@@ -1225,7 +1271,7 @@ body {
 
 .swi2 .swiper-button-next,.swi2 .swiper-button-prev{
    color: rgb(116, 116, 116);
-   
+
 }
 
 .swi2 .cardcont{
@@ -1281,14 +1327,14 @@ body {
 
 
 
-  
+
   .contactvphp{
-    background: url('/image/9.jpg') no-repeat top center;
+    background: url('../image/9.jpg') no-repeat top center;
     background-size: cover;
     width: 100%;
     height: 100vh;
   }
-  
+
   .contactvphp .wrapper{
     position: relative;
     top: 50%;
@@ -1299,10 +1345,10 @@ body {
 
   .single-footer li:hover a{
       background-color: rgba(0, 141, 235, 0.192);
-     
+
 
   }
-  
+
   .contactvphp .contact-form{
     display: flex;
     max-width: 80vw;
@@ -1312,18 +1358,18 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
-  
+
   .contactvphp .input-fields{
     display: flex;
     flex-direction: column;
     margin-right: 4%;
   }
-  
+
   .contactvphp .input-fields,
   .contactvphp .msg{
     width: 48%;
   }
-  
+
   .contactvphp .input-fields .input,
   .contactvphp .msg textarea{
     margin: 10px 0;
@@ -1334,11 +1380,11 @@ body {
     color: #c5ecfd;
     width: 100%;
   }
-  
+
   .contactvphp .msg textarea{
     height: 212px;
   }
-  
+
   ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #c5ecfd;
@@ -1351,7 +1397,7 @@ body {
     /* IE 10+ */
     color: #c5ecfd;
   }
-  
+
   .contactvphp .btn {
       background: #39b7dd;
       text-align: center;
@@ -1361,13 +1407,13 @@ body {
       cursor: pointer;
       text-transform: uppercase;
   }
-  
+
   @media screen and (max-width: 600px){
     .contact-form{
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
+
     }
     .wrapper{
         height: 100vh;
@@ -1380,7 +1426,7 @@ body {
       height: 80px;
 
     }
-   
+
     .input-fields,
     .msg{
       width: 100%;
@@ -1390,7 +1436,7 @@ body {
 
 /* ---------------------------------footer vp--------------------------- */
 .footer-wrapper{
-    
+
     display: flex;
    flex-direction: row;
     justify-content: center;
@@ -1456,7 +1502,7 @@ footer{
     .logoimgsm{
         width: 20vw;
     }
-    
+
 
 
 }
@@ -1466,17 +1512,17 @@ footer{
     .logoimgsm{
         width: 12vw;
     }
-     
 
-     
-   
+
+
+
 }
 @media (min-width: 768px){
     .logoimgsm{
         width: 10vw;
     }
 
-   
+
 }
 
 
@@ -1501,21 +1547,21 @@ footer{
 }
 
 
-   
-   
+
+
 
 @media (min-width: 1024px){
     .logoimg{
         width: 9vw;
     }
-    
-   
+
+
 }
 
 @media (min-width: 1200px){
     .logoimg{
         width: 7vw;
     }
-    
-   
+
+
 }
