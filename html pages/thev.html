@@ -2,17 +2,17 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8"/>
-    <title>ECell DTU</title>
+    <title>TheV</title>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
 
 <link href="../css pages/home1.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="../css pages/home.css" type="text/css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+<link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
 <link rel="stylesheet" href="../css pages/thev.css">
-    <link rel="stylesheet" href="../css pages/home3.css">
+    <link rel="stylesheet" href="../css pages/index.css">
     <link rel="stylesheet" href="../css pages/team.css">
 
 </head>
@@ -32,55 +32,53 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-md-auto mr-md-auto text-capitalize ">
+        <ul class="navbar-nav ml-md-auto mr-5 text-capitalize ">
           <li class="nav-item ml-0 pl-0 px-2">
-            <a class="nav-link" href="../html pages/home3.html#firstvphp">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../index.html#firstvphp">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link " href="../html pages/about.html">About <span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="../index.html#aboutvphp">About <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link " href="../html pages/initiatives.html">Initiatives</a>
-          </li>
-
-          <li class="nav-item px-2">
-            <a class="nav-link" href="../html pages/home3.html#secondvphp">Perks</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="../html pages/esummit.html">E-Summit'20</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="../html pages/sw.html">SW'19</a>
+            <a class="nav-link" href="../initiatives.html">Initiatives</a>
           </li>
 
 
+          <li class="nav-item px-2">
+            <a class="nav-link" href="../esummit.html">E-Summit</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="../sw.html">SW</a>
+          </li>
 
           <li class="nav-item px-2">
-            <a class="nav-link" href="../html pages/home3.html#fourthvphp">Sponsors</a>
+            <a class="nav-link" href="../social.html">Social</a>
           </li>
+
+
 
           <li class="nav-item dropdown px-2">
-            <a class="nav-link dropdown-toggle active" href="../html pages/home3.html#testvphp" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="../index.html#testvphp" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Message
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../html pages/home3.html#testvphp">Testimonials</a>
-              <a class="dropdown-item active" href="../html pages/message.html">Faculty</a>
+              <a class="dropdown-item" href="../index.html#testvphp">Testimonials</a>
+              <a class="dropdown-item" href="../message.html">Faculty</a>
 
             </div>
           </li>
 
           <li class="nav-item px-2">
-            <a class="nav-link" href="../html pages/home3.html#contactformvphp">Contact</a>
+            <a class="nav-link" href="../index.html#contactformvphp">Contact</a>
           </li>
 
           <li class="nav-item dropdown px-2">
-            <a class="nav-link dropdown-toggle" href="../html pages/team.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="../team.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Team
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../html pages/team.html">Our Team</a>
-              <a class="dropdown-item" href="../html pages/pastMembers.html">Past Members</a>
+              <a class="dropdown-item" href="../team.html">Our Team</a>
+              <a class="dropdown-item" href="../pastMembers.html">Past Members</a>
 
             </div>
           </li>
@@ -107,21 +105,23 @@
       <div class="sidebar" id="sidebar">
         <div class="toggle" onclick="toggle_div()"></div>
           <ul>
-            <li><a href="../html pages/home3.html#firstvphp">Home</a></li>
-            <li><a href="../html pages/about.html">About</a></li>
-            <li><a href="../html pages/initiatives.html">Initiatives</a></li>
-            <li><a href="../html pages/home3.html#secondvphp">Perks</a></li>
-            <li><a href="../html pages/esummit.html">ESummit'20</a></li>
-            <li><a href="../html pages/sw.html">SW'19</a></li>
-            <li><a href="../html pages/home3.html#fourthvph">Sponsors</a></li>
-            <li><a href="../html pages/home3.html#testvphp">Testimonial</a></li>
-            <li><a href="../html pages/home3.html#contactformvphp">Contact</a></li>
-            <li><a href="../html pages/message.html">Message</a></li>
-            <li><a href="../html pages/team.html">Team</a></li>
-            <li><a href="#">Past Members</a></li>
+            <li><a href="../index.html#firstvphp">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../initiatives.html">Initiatives</a></li>
+
+            <li><a href="../esummit.html">E-Summit</a></li>
+            <li><a href="../sw.html">SW</a></li>
+           <li><a href="../social.html">Social</a></li>
+            <li><a href="../index.html#testvphp">Testimonial</a></li>
+            <li><a href="../index.html#contactformvphp">Contact</a></li>
+            <li><a href="../message.html">Message</a></li>
+            <li><a href="../team.html">Team</a></li>
+            <li><a href="../pastMembers.html">Past Members</a></li>
           </ul>
 
       </div>
+
+
 
       <!-- -------------------------------------------thev----------------------------------------- -->
 
@@ -131,59 +131,38 @@
         <div class="vipres">
           <div class="flip-card ">
             <div class="flip-card-inner">
-              <div class="flip-card-front" style="background-image: url(../image/hrweb.JPG); background-size: cover;
+              <div class="flip-card-front" style="background-image: url(../image/team/vidushi.jpeg); background-size: cover;
               background-repeat: no-repeat;">
-               <input type="checkbox">
-               <div class="teamtoggle">+</div>
+
                 <div class="teamname">
-                  <h1>Vidushi Srivastava</h1>
+                  <h1 class="mt-0">Vidushi Srivastava</h1>
                   <div class="teamsoc">
-                    <img src="../image/_ionicons_svg_logo-linkedin.svg" alt="">
-                    <img src="../image/facebook logo.png" alt="">
-                    <img src="../image/instagram logo.jpg" alt="">
+                 <a class="link grow hover-blue" target="_blank" href="https://www.linkedin.com/in/vidushisrivastava"> <img src="../image/_ionicons_svg_logo-linkedin.svg" style="width: 30px;" alt=""> </a>
+                  <a class="link grow hover-blue" target="_blank" href="https://instagram.com/6dushi?igshid=1d2chx32b0z9z">  <img src="../image/instagram logo.jpg" alt=""> </a>
                   </div>
                 </div>
               </div>
 
-              <div class="flip-card-back">
 
-                  <input type="checkbox">
-                    <div class="teamtoggle">+</div>
-                <div class="teamcont">
-                <h1>Vidushi Srivastava</h1>
-                <p>Developer</p>
-                <p>Lorem ipsum dolor sit.
-                </p></div>
-              </div>
 
           </div>
           </div>
     <!-- ======2nd card======= -->
           <div class="flip-card">
             <div class="flip-card-inner">
-              <div class="flip-card-front" style="background-image: url(../image/hrweb.JPG); background-size: cover;
+              <div class="flip-card-front" style="background-image: url(../image/team/vishwas.jpeg); background-size: cover;
               background-repeat: no-repeat;">
-               <input type="checkbox">
-               <div class="teamtoggle">+</div>
+
+
                 <div class="teamname">
-                  <h1>Vishwas Agarwal</h1>
+                  <h1 class="mt-0">Vishwas Agarwal</h1>
                   <div class="teamsoc">
-                    <img src="../image/_ionicons_svg_logo-linkedin.svg" alt="">
-                    <img src="../image/facebook logo.png" alt="">
-                    <img src="../image/instagram logo.jpg" alt="">
+                 <a class="link grow hover-blue" target="_blank" href="https://www.linkedin.com/in/vishwas-agarwal-a3948816b/"> <img src="../image/_ionicons_svg_logo-linkedin.svg" style="width: 30px;" alt=""> </a>
+                  <a class="link grow hover-blue" target="_blank"  href="https://www.instagram.com/vishwas.agarwal.165/">  <img src="../image/instagram logo.jpg" alt=""></a>
                   </div>
                 </div>
               </div>
 
-              <div class="flip-card-back" style="background-color: black;">
-
-                  <input type="checkbox">
-                    <div class="teamtoggle">+</div>
-                <div class="teamcont">
-                <h1>Vishwas Agarwal</h1>
-                <p>Developer</p>
-                <p>Lorem ipsum dolor sit.</p></div>
-              </div>
 
           </div>
           </div>
@@ -194,28 +173,63 @@
         <div class="col-md-6">
           <figure class="animate-box">
              <div class="list-group">
-                <a href="#" class="list-group-item">
+                <a target="_blank" href="https://www.linkedin.com/in/kartikay-bagla-60638a167/" class="list-group-item">
                   <h4 class="list-group-item-heading">Kartikay Bagla</h4>
                   <p class="list-group-item-text">User Interface</p>
                 </a>
-                <a href="#" class="list-group-item">
-                  <h4 class="list-group-item-heading">Kunal Kashyap</h4>
-                  <p class="list-group-item-text">User Experience</p>
-                </a>
+
               </div>
           </figure>
         </div>
         <div class="col-md-6">
           <figure class="animate-box">
              <div class="list-group">
-                <a href="#" class="list-group-item">
+                <a target="_blank" href="https://www.linkedin.com/in/kunal-kashyap-233a9914a/" class="list-group-item">
+                  <h4 class="list-group-item-heading">Kunal Kashyap</h4>
+                  <p class="list-group-item-text">User Experience</p>
+                </a>
+
+              </div>
+          </figure>
+        </div>
+      </div>
+
+
+      <div style="text-align:center; justify-content:center; align-items:center;"><h3> <b class="under pt-4">TEAM</b></h3></div>
+      <div class="heads row row-bottom-padded-lg pt-4">
+        <div class="col-md-6">
+          <figure class="animate-box">
+             <div class="list-group">
+                <a target="_blank" href="https://www.linkedin.com/in/uddeshya-khanna-18349064/" class="list-group-item">
                   <h4 class="list-group-item-heading">Uddeshya Khanna</h4>
                   <p class="list-group-item-text">Content</p>
                 </a>
-                <a href="#" class="list-group-item">
+                <a target="_blank" href="https://www.linkedin.com/in/adarsh-jha-09102000" class="list-group-item">
+                  <h4 class="list-group-item-heading">Adarsh Jha</h4>
+                  <p class="list-group-item-text">Content</p>
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/vrinda-aggarwal-973a3616b" class="list-group-item">
+                  <h4 class="list-group-item-heading">Vrinda Aggarwal</h4>
+                  <p class="list-group-item-text">Content</p>
+                </a>
+
+              </div>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <figure class="animate-box">
+             <div class="list-group">
+                <a target="_blank" href="https://www.linkedin.com/in/manik-verma-12872416b" class="list-group-item">
                   <h4 class="list-group-item-heading">Manik Verma</h4>
                   <p class="list-group-item-text">Content</p>
                 </a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/n-krithika-9156b3194" class="list-group-item">
+                  <h4 class="list-group-item-heading">N. Krithika</h4>
+                  <p class="list-group-item-text">Content</p>
+                </a>
+
               </div>
           </figure>
         </div>
@@ -227,41 +241,46 @@
    <footer><div class="footer-wrapper">
     <div class="single-footer">
       <img src="../image/ecelltext.png" class="footlogo">
-      <p>Entrepreneurship Cell DTU</p>
+      <p>Entrepreneurship Cell<br>
+         Delhi Technological University<br>
+        (Formerly Delhi College of Engineering)</p>
     </div>
     <div class="single-footer">
-     <h4>Navigation</h4>
+     <h4>NAVIGATION</h4>
      <ul>
-       <li><a href="../html pages/home3.html">Home</a></li>
-       <li><a href="../html pages/home3.html#sixthvphp">ESummit'20</a></li>
-       <li><a href="../html pages/home3.html#seventhvphp">SW'19</a></li>
-       <li><a href="../html pages/team.html">Team</a></li>
+       <li><a href="../index.html">Home</a></li>
+       <li><a href="../index.html#sixthvphp">E-Summit</a></li>
+       <li><a href="../index.html#seventhvphp">SW</a></li>
+       <li><a href="../team.html">Team</a></li>
      </ul>
    </div>
    <div class="single-footer">
-     <h4>Contact Us</h4>
+     <h4>CONTACT US</h4>
      <ul>
-       <li><a href="mailto:ecell@gmail.com">ecell@gmail.com</a></li>
-       <li><a href="#">Delhi Technological University</a></li>
-       <li><a href="#">(DCE)New Delhi 110042</a></li>
-       <li><a href="tel:9871500839">+1234567890</a></li>
-
+       <li><a href="mailto:info@ecelldtu.in">info@ecelldtu.in</a></li>
+       <li><a href="#">Delhi Technological University </a></li>
+       <li><a href="#">Shahbad Daulatpur, Main Bawana Road, Delhi-110042</a></li>
+       <li><a href="tel:9682513330 ">+91 9682513330</a></li>
+        <li><a href="tel:9818023103">+91 9818023103</a></li>
      </ul>
    </div>
    <div class="single-footer">
-     <h4>Socials</h4>
-     <ul>
-       <li><a href="#"><img src="../image/_ionicons_svg_logo-linkedin.svg" class="socialimg"></a></li>
-       <li><a href="#"><img src="../image/instagram logo.jpg" class="socialimg"></a></li>
-       <li><a href="#"><img src="../image/twitter logo.png" class="socialimg"></a></li>
-       <li><a href="#"><img src="../image/facebook logo.png" class="socialimg"></a></li>
+     <h4 style="margin-top:0">SOCIALS</h4>
 
-     </ul>
+     <a  href="https://www.linkedin.com/company/ecelldtu/" target="_blank"><img src="../image/_ionicons_svg_logo-linkedin.svg" class="socialimg link grow glow"></a>
+     <a  href="https://www.instagram.com/ecelldtu/" target="_blank"><img src="../image/instagram logo.jpg" class="socialimg link grow glow" ></a>
+     <a href="https://twitter.com/ecelldtu?lang=en" target="_blank"><img src="../image/twitter logo.png" class="socialimg link grow glow"></a>
+     <a  href="https://www.facebook.com/ECellDTU/" target="_blank"><img src="../image/facebook logo.png" class="socialimg link grow glow"></a>
+     <a  href="https://www.youtube.com/user/ecelldtu" target="_blank"><img src="../image/youtube logo.png" class="socialimg link grow glow"></a>
+<a  href="https://www.quora.com/q/utucvggigaejekxt" target="_blank"><img src="../image/quora logo.png" class="socialimg link grow glow"></a>
+
    </div>
-  </div>
-  <hr style="background-color: #f3f4f69a;"><div class="bottomline">
- <div class="crypt"> © 2020 E-Cell DTU. All Rights Reserved</div><div class="desby">Designed by - <a href="../html pages/thev.html">The V's</a></div></div>
- </footer>
+   </div>
+   <hr style="background-color: #f3f4f69a;"><div class="bottomline">
+   <div class="crypt"> © 2020 E-Cell DTU. All Rights Reserved</div><div class="desby"> <a href="../thev.html">Meet The Developers </a></div></div>
+   </footer>
+
+
 
 
 
@@ -296,6 +315,9 @@
 
 
 
+<!-- ------script for chat bot-------- -->
+
+<script src="//code.tidio.co/8rlwtx9ex9jcgkwhedb1wqkkaosclsxp.js" async></script>
 
 
 

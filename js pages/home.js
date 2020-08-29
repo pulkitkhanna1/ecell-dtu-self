@@ -48,7 +48,7 @@ function toggle_div(){
 $('.counting').each(function() {
   var $this = $(this),
       countTo = $this.attr('data-count');
-  
+
   $({ countNum: $this.text()}).animate({
     countNum: countTo
   },
@@ -65,15 +65,31 @@ $('.counting').each(function() {
       //alert('finished');
     }
 
-  });  
-  
+  });
+
 
 });
 
 
 
+  //-----------------------------testimonial large autoplay------------------------------------------------//
+  var swiper = new Swiper('.swi3', {
+    slidesPerView: 'auto',
 
-  //-----------------------------testimonial autoplay------------------------------------------------
+    centeredSlides: true,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+
+  //-----------------------------testimonial small devices autoplay------------------------------------------------//
 
   var swiper = new Swiper('.swi2', {
     spaceBetween: 0,
@@ -146,7 +162,7 @@ $('.counting').each(function() {
         function validateForm() {
           if (!validateName() || !validatePhone() || !validateEmail()) {
 
-           
+
             return false;
           }
           else {
@@ -155,5 +171,3 @@ $('.counting').each(function() {
             return true;
           }
         }
-
-

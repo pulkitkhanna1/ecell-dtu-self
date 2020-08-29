@@ -14,26 +14,49 @@ html{
 
     background-repeat: no-repeat;
 }
+@media (max-width:991px){
 
+  .hero-banner{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../image/back\ esummit\ med.png);
+      background-attachment: fixed;
+      background-size: cover;
+
+      background-repeat: no-repeat;
+  }
+
+}
+@media (max-width:425px){
+
+  .hero-banner{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../image/back\ esummit\ small.png);
+      background-attachment: fixed;
+      background-size: cover;
+
+      background-repeat: no-repeat;
+  }
+
+}
 .hero-banner-icon{
     height: 500px;
 }
+.esummittext{
 
-
-
-.hero-banner .container h1{
-    font-size: 6vmax;
-    color: #fff;
-    font-weight: 600;
+font-weight:500;
+font-size: 4vmax !important;
+color:white !important;
 
 }
-.hero-banner .container p{
-    font-size: 20px;
-    font-weight: 600;
-    padding-top: 1vmax;
-    color: rgb(219, 219, 219);
 
-}
+
+
 
 .dtu{
     font-size: 2vmax;
@@ -45,18 +68,16 @@ html{
   font-size: 15px;
 }
 
-@media (max-width:500px){
-    .hero-banner .container h1{
-        font-size: 8vmax;
-        color: #fff;
-        font-weight: 600;
 
-    }
+
+@media (max-width:500px){
+
 
     .dtu{
         font-size: 3.5vmax;
     }
 }
+
 
 
 /* ---------------------about e-summit---------------------------------- */
@@ -136,7 +157,7 @@ position: absolute;
     padding:8px 16px;
     border-right: 1px solid #ddd;
 }
-@media (max-width:400px){
+@media (max-width:625px){
     .single-fact{
         text-align: center;
         width: 350px;
@@ -158,24 +179,49 @@ position: absolute;
 
 }
 
-.fa-user-tie{
-    color: royalblue;
+
+/*===================salient features=================*/
+
+.underli {
+    position: relative;
+    display: inline-block;
+}
+.underli::after {
+    content: '';
+    position: absolute;
+
+    /* you can adjust the properties to your liking */
+    bottom: 0;
+
+    left: 0;
+    width: 97%;
+    border-bottom: .8vh solid #3399ff;
 }
 
-.fa-university{
-    color: saddlebrown;
+
+.whatt .content p{
+
+font-size:1.2vmax;
+
 }
 
-.fa-briefcase{
- color: seagreen;
+@media(max-width: 990px)
+{
+
+  .whatt .content p{
+
+  font-size:1.7vmax;
+
+  }
 }
-
-
 
 /*/ end count stats /*/
  /* ============================================photo gallery=========================================== */
 .phga{
-    padding: 30px 0;
+    padding: 5px 0;
+}
+.vg{
+  height: fit-content;
 }
  .phga h1{
      text-transform: capitalize;
@@ -184,6 +230,35 @@ position: absolute;
 
 
  }
+
+ @media(max-width:991px)
+ {
+   .phga h1{
+       text-transform: capitalize;
+       font-size: 40px;
+       font-weight: 700;
+
+
+   }
+ }
+
+
+ @media(max-width:560px)
+ {
+   .phga h1{
+       text-transform: capitalize;
+       font-size: 25px;
+       font-weight: 700;
+
+
+   }
+ }
+
+
+
+
+
+
  html, body {
     position: relative;
     height: 100%;
@@ -256,9 +331,67 @@ position: absolute;
 
 
   /* =================================speaker---======================================= */
+  .animated-text{
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #000000;
+    padding: 0 40px;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .linesp{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media(max-width:991px){
+  .linesp {
+     font-size:40px;
+   }
+
+   }
+
+  @media(max-width:560px){
+  .linesp {
+     font-size:25px;
+   }
+
+   }
+
+
+  .linesp:first-child{
+    animation: anim 16s infinite;
+  }
+
+  @keyframes anim {
+    0%{
+      margin-top: 0;
+    }
+    25%{
+      margin-top: -60px;
+    }
+    50%{
+      margin-top: -120px;
+    }
+
+    75%{
+      margin-top: -60px;
+    }
+    100%{
+      margin-top: 0;
+    }
+  }
 
 .speaker{
-    background-image: url(/image/esummit\ speaker/spback.png);
+    background-image: url(../image/esummit\ speaker/spback.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100% !important;
@@ -271,6 +404,32 @@ position: absolute;
     font-size: 50px;
     font-weight: 700;
 }
+
+
+@media(max-width:991px)
+{
+  .speaker .insitehead{
+      color: #fff;
+      font-size: 40px;
+      padding-top: 3px;
+      font-weight: 700;
+  }
+}
+
+
+
+@media(max-width:560px)
+{
+  .speaker .insitehead{
+      color: #fff;
+       padding-top: 3px;
+      font-size: 25px;
+      font-weight: 700;
+  }
+}
+
+
+
   .esumsp{
       display: flex;
       justify-content: center;
@@ -315,7 +474,7 @@ position: absolute;
       box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   }
   .esumsp .containersp .cardsp:hover{
-      height: 420px;
+      height: 460px;
   }
   .esumsp .containersp .cardsp .imgbxsp img{
       height: 100%;
@@ -336,7 +495,7 @@ position: absolute;
   .esumsp .containersp .cardsp:hover .contentsp{
       visibility: visible;
       opacity: 1;
-      margin-top: -40px;
+      margin-top: -20px;
       transition-delay: 0.2s;
   }
   .esumsp .headsp{
@@ -358,284 +517,422 @@ position: absolute;
     font-size: 20px;
     transition-delay: 0.2s;
   }
+  .comyear{
+       visibility: hidden;
 
+       background-color: rgb(0, 0, 0);
+       box-shadow: 0px 0px 4px #333;
+       color: #fff;
+       font-size: 1.2rem;
+       margin: 0;
+       padding: 1px 0px;
+       transition: 0.2s ease-in-out !important;
+
+     transform: translateY(-10px) ;
+     z-index: -1;
+      }
+   .comyear p{
+       display: block;
+       text-align: center;
+       margin: 0;
+
+
+   }
+
+   .esumsp .containersp .cardsp:hover .comyear{
+       visibility: visible;
+
+       transform: translateY(0px);
+
+       transition-delay:  0.2s !important;
+   }
   /* ======================================day schedule tabs================================ */
 
-.daysch{
-    width: 100%;
-    min-height: 100vh;
-    padding-top: 1vh;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding-bottom: 20vh;
+  .daysch{
+      width: 100%;
+      min-height: 100vh;
+      padding-top: 1vh;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      padding-bottom: 8vh;
+  }
+
+  .eventsch h1{
+      font-size: 50px;
+      font-weight: 600;
+  }
+
+@media(max-width:991px)
+{
+  .eventsch h1{
+      font-size: 40px;
+      font-weight: 600;
+  }
 }
 
-.eventsch h1{
-    font-size: 50px;
-    font-weight: 600;
-}
-.slidesday {
-position: relative;
-height: auto;
-}
-.slidesday .slideday {
-position: absolute;
-top: 0;
-width: calc(33% - 2em);
-max-height: 3.5em;
-margin: 0.5em;
-padding: 1em;
-background: #34495e;
-color: white;
-float: left;
-overflow: hidden;
-transition: max-height 0.25s ease-in-out, width 0.25s 0.25s ease-in-out, left 0.25s 0.5s ease-in-out, top 0.25s 0.75s ease-in-out;
-}
-.slidesday .slideday:nth-child(1) {
-left: 0%;
-background:#dbdbdb;;
-
-}
-.slidesday .slideday:nth-child(2) {
-left: 33.3333%;
-background:  #dbdbdb;;
-}
-.slidesday .slideday:nth-child(3) {
-left: 66.6666%;
-background: #dbdbdb;
-}
-.slidesday .slideday > a {
-display: block;
-padding-bottom: 1em;
-text-transform: uppercase;
-text-decoration: none;
-text-align: center;
-font-weight: 700;
-color: rgb(0, 0, 0);
-transition: color 2s;
-}
-.slidesday .slideday.active {
-position: relative;
-top: 4.5em;
-left: 0;
-background-color: rgba(0, 0, 0, 0.911);
-width: 100% ;
-max-height: 400vh;
-
-float: none;
-transition: top 0.25s 1s ease-in-out, left 0.25s 1.25s ease-in-out, width 0.25s 1.5s ease-in-out, max-height 0.25s 1.75s ease-in-out;
-}
-.slidesday .slideday.active a {
-
-font-size: 30px;
-color: white;
-transition-delay: 0.3s;
-
-}
-
-
-.containerday {
-width: 90vw;
-max-width: 100%;
-
-
-
-}
-
-/* =========day schedule cards======= */
-.contentday{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
-}
-
-.contentday .cardcont{
-    position: relative;
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-
-.contentday .cardcont .cardday{
-    position: relative;
-
-    background: #fff;
-    display: flex;
-
-    width: 70vw;
-    height: auto ;
-    margin:  20px;
-}
-.contentday .cardcont .cardday .mainday{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #333;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-
-}
-.contentday .cardcont .cardday:hover .mainday{
-    width: 150px;
-    height: 150px;
-    left: -100px;
-    top: calc(50% - 75px);
-    transition: 0.5s ease-in-out;
-    background: #006280;
-
-}
-
-.contentday .cardcont .cardday .mainday:before{
-    content: attr(data-text);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-
-    text-align: center;
-    font-size: 6em;
-    color: rgba(255,255,255,.1);
-    font-weight: 700;
-}
-.contentday .cardcont .cardday .mainday img{
-    max-width: 100px;
-    transition: 0.5s ease-in-out;
-
-}
-.contentday .cardcont .cardday:hover .mainday img{
-    max-width: 75px;
-
-
+@media(max-width:560px)
+{
+  .eventsch h1{
+      font-size: 25px;
+      font-weight: 600;
+  }
 }
 
 
 
-.contentday .cardcont .cardday .textday{
-    color: rgba(0, 0, 0);
-     text-align: center;
+  .slidesday {
+  position: relative;
+  height: auto;
+  }
+  .slidesday .slideday {
+  position: absolute;
+  top: 0;
+  width: calc(33% - 2em);
+  max-height: 3.5em;
+  margin: 0.5em;
+  padding: 1em;
+  background: #34495e;
+  color: white;
+  float: left;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out, width 0.25s 0.25s ease-in-out, left 0.25s 0.5s ease-in-out, top 0.25s 0.75s ease-in-out;
+  }
+  .slidesday .slideday:nth-child(1) {
+  left: 0%;
+  background:#dbdbdb;;
 
-     filter: blur(3px);
-     transition: 0.5s;
+  }
+  .slidesday .slideday:nth-child(2) {
+  left: 33.3333%;
+  background:  #dbdbdb;;
+  }
+  .slidesday .slideday:nth-child(3) {
+  left: 66.6666%;
+  background: #dbdbdb;
+  }
+  .slidesday .slideday > a {
+  display: block;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  transition: color 2s;
+  }
+  .slidesday .slideday.active {
+  position: relative;
+  top: 4.5em;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.911);
+  width: 100% ;
+  max-height: 400vh;
 
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-   padding: 10px;
+  float: none;
+  transition: top 0.25s 1s ease-in-out, left 0.25s 1.25s ease-in-out, width 0.25s 1.5s ease-in-out, max-height 0.25s 1.75s ease-in-out;
+  }
+  .slidesday .slideday.active a {
 
-}
+  font-size: 30px;
+  color: white;
+  transition-delay: 0.3s;
 
-.contentday .cardcont .cardday:hover .textday{
-    filter: blur(0px);
-}
-
-.contentday .cardcont .cardday .textday h1{
-    margin-bottom: 5px;
-
-    font-size: 24px;
-}
-.contentday .cardcont .cardday .textday p{
-  font-size: 12px;
-  padding: 0 50px;
-}
-
-/* =====media quaries */
-@media (max-width:991px){
-    .contentday .cardcont .cardday:hover .mainday{
-        width: 100px;
-        height: 100px;
-        left: -50px;
-        top: calc(50% - 50px);
-        transition: 0.5s ease-in-out;
-        background: #006280;
-
-    }
-    .contentday .cardcont .cardday .mainday:before{
-        content: attr(data-text);
-        position: absolute;
-        bottom: 20%;
-        left: 0;
-        width: 100%;
-
-        text-align: center;
-        font-size: 4em;
-        color: rgba(255,255,255,.1);
-        font-weight: 700;
-    }
-}
-
-@media (max-width:560px){
-    .contentday .cardcont .cardday{
-        max-width: 500px;
-        flex-direction: column;
-        height: auto;
-    }
-    .contentday .cardcont .cardday .mainday{
-        position: relative;
-        top: 0;
-
-    }
-    .contentday .cardcont .cardday .mainday,
-
-    .contentday .cardcont .cardday:hover .mainday{
-        width: 100%;
-        height: 200px;
-        left: 0;
-        top: 0;
-
-    }
-
-    .contentday .cardcont .cardday .mainday img,
-
-    .contentday .cardcont .cardday:hover .mainday img{
-        max-width: 100px;
-
-    }
-    .contentday .cardcont .cardday .textday{
-        position: relative;
-        width: 100%;
-
-    }
-
-    .contentday .cardcont .cardday .mainday:before{
-        content: attr(data-text);
-        position: absolute;
-        bottom: 10%;
-        left: 0;
-        width: 100%;
-
-        text-align: center;
-        font-size: 4em;
-        color: rgba(255,255,255,.1);
-        font-weight: 700;
-    }
-
-    .contentday .cardcont .cardday .textday h1{
-        margin-bottom: 5px;
-
-        font-size: 24px;
-    }
-    .contentday .cardcont .cardday .textday p{
-      font-size: 12px;
-      padding: 0 2px;
-    }
-
-}
+  }
 
 
+  .containerday {
+  width: 90vw;
+  max-width: 100%;
+
+
+
+  }
+
+  /* =========day schedule cards======= */
+  .contentday{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+
+  }
+
+  .contentday .cardcont{
+      position: relative;
+      width: 1000px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px;
+  }
+
+  .contentday .cardcont .cardday{
+      position: relative;
+
+      background: #fff;
+      display: flex;
+
+      width: 60vw;
+      height: auto ;
+      margin:  20px;
+  }
+  .contentday .cardcont .cardday .mainday{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #333;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
+
+  }
+  .contentday .cardcont .cardday:hover .mainday{
+      width: 200px;
+      height: 200px;
+      left: -150px;
+      top: calc(50% - 100px);
+      transition: 0.5s ease-in-out;
+      background: #006280;
+
+
+  }
+
+  .contentday .cardcont .cardday .mainday:before{
+      content: attr(data-text);
+      position: absolute;
+      bottom: 25%;
+      left: 0;
+      width: 100%;
+
+      text-align: center;
+      font-size: 6em;
+      color: rgba(255, 255, 255, 0.3);
+      font-weight: 700;
+  }
+  .contentday .cardcont .cardday .mainday img{
+      max-width: 100px;
+      transition: 0.5s ease-in-out;
+
+  }
+  .contentday .cardcont .cardday:hover .mainday img{
+      max-width: 75px;
+
+
+  }
+
+
+
+  .contentday .cardcont .cardday .textday{
+      color: rgba(0, 0, 0);
+       text-align: center;
+
+
+       filter: blur(3px);
+       transition: 0.5s;
+
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+     padding: 10px;
+
+  }
+
+
+  .contentday .cardcont .cardday:hover .textday{
+      filter: blur(0px);
+  }
+
+  .contentday .cardcont .cardday:hover .mainday.slls{
+      transition: 0.5s;
+      transition-delay: 0.2s;
+      background-image: url(../image/phoga/image6.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+
+  .contentday .cardcont .cardday:hover .mainday.syt{
+      transition: 0.5s;
+      transition-delay: 0.2s;
+      background-image: url(../image/phoga/g1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+
+  .contentday .cardcont .cardday:hover .mainday.scn{
+      transition: 0.5s;
+      transition-delay: 0.2s;
+      background-image: url(../image/phoga/image1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+
+  .contentday .cardcont .cardday:hover .mainday.ssc{
+      transition: 0.5s;
+      transition-delay: 0.2s;
+      background-image: url(../image/phoga/g8.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+
+  .contentday .cardcont .cardday:hover .mainday.sbp{
+      transition: 0.5s;
+      transition-delay: 0.2s;
+      background-image: url(../image/phoga/image15.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+
+  .contentday .cardcont .cardday:hover .mainday.snd{
+      transition: 0.5s;
+      transition-delay: 0.2s;
+      background-image: url(../image/phoga/nd.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+
+  .contentday .cardcont .cardday:hover .mainday.sci{
+      transition: 0.5s;
+      transition-delay: 0.2s;
+      background-image: url(../image/phoga/image9.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+
+  .contentday .cardcont .cardday:hover .mainday.ssi{
+      transition: 0.5s;
+      transition-delay: 0.2s;
+      background-image: url(../image/phoga/g6.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+
+  .contentday .cardcont .cardday:hover .mainday.sbn{
+      transition: 0.5s;
+      transition-delay: 0.2s;
+      background-image: url(../image/phoga/image19.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+
+  .contentday .cardcont .cardday .textday h1{
+      margin-bottom: 5px;
+
+      font-size: 2.4rem;
+  }
+  .contentday .cardcont .cardday .textday p{
+    font-size: 1rem;
+    padding: 0 50px;
+  }
+
+  /* =====media quaries */
+  @media (max-width:991px){
+      .contentday .cardcont .cardday:hover .mainday{
+          width: 100px;
+          height: 100px;
+          left: -50px;
+          top: calc(50% - 50px);
+          transition: 0.5s ease-in-out;
+          background: #006280;
+
+      }
+      .contentday .cardcont .cardday .mainday:before{
+          content: attr(data-text);
+          position: absolute;
+          bottom: 50%;
+          left: 0;
+          width: 100%;
+
+          text-align: center;
+          font-size: 4em;
+          color: rgba(255,255,255,.1);
+          font-weight: 700;
+      }
+  }
+
+  @media (max-width:560px){
+      .contentday .cardcont .cardday{
+          max-width: 500px;
+          flex-direction: column;
+          height: auto;
+      }
+      .contentday .cardcont .cardday .mainday{
+          position: relative;
+          top: 0;
+
+      }
+      .contentday .cardcont .cardday .mainday,
+
+      .contentday .cardcont .cardday:hover .mainday{
+          width: 100%;
+          height: 200px;
+          left: 0;
+          top: 0;
+
+      }
+
+      .contentday .cardcont .cardday .mainday img,
+
+      .contentday .cardcont .cardday:hover .mainday img{
+          max-width: 100px;
+
+      }
+      .contentday .cardcont .cardday .textday{
+          position: relative;
+          width: 100%;
+
+      }
+
+      .contentday .cardcont .cardday .mainday:before{
+          content: attr(data-text);
+          position: absolute;
+          bottom: 10%;
+          left: 0;
+          width: 100%;
+
+          text-align: center;
+          font-size: 4em;
+          color: rgba(255,255,255,.1);
+          font-weight: 700;
+      }
+
+      .contentday .cardcont .cardday .textday h1{
+          margin-bottom: 5px;
+
+          font-size: 24px;
+      }
+      .contentday .cardcont .cardday .textday p{
+        font-size: 12px;
+        padding: 0 2px;
+      }
+
+  }
 
 /* =======================================why attend============================== */
 .whinsitehead{
@@ -650,6 +947,30 @@ max-width: 100%;
     font-weight: 600;
 
 }
+
+@media(max-width:991px)
+{
+
+  .whinsitehead h1{
+      font-size: 40px;
+
+
+  }
+
+}
+
+
+@media(max-width:560px)
+{
+
+  .whinsitehead h1{
+      font-size: 25px;
+
+
+  }
+
+}
+
 
 .whatt{
     margin: 0;
@@ -694,7 +1015,7 @@ max-width: 100%;
         border-radius: 0;
         border: 0;
         margin: 0;
-        height: 280px;
+        height: 295px;
         background: #fff;
         display: flex;
         justify-content: center;
@@ -762,6 +1083,94 @@ max-width: 100%;
     font-weight: 600;
 }
 
+
+
+@media(max-width:560px)
+{
+  .whatt .container .card .content h2{
+      font-size: 1.5em;
+      font-weight: 600;
+  }
+
+
+  .whatt .container .card .content p{
+      font-size: 0.90em;
+  }
+}
+
+
 .whatt .container .card .content p{
     font-size: 0.96em;
+}
+
+
+
+/*--------------media queries-------------*/
+
+@media(max-width:991px)
+{
+  .evid h4{
+
+      font-size: 30px !important;
+
+
+
+  }
+}
+
+
+@media(max-width:560px)
+{
+  .evid h4{
+
+      font-size: 20px !important;
+
+
+
+  }
+  .esummvid{
+    width: 100% !important;
+    height: 50% !important;
+
+  }
+  .abesum {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media(max-width:991px)
+{
+  .caption p{
+
+      font-size: 1rem !important;
+
+
+
+  }
+}
+
+
+@media(max-width:331px){
+  .abesum .content h1{
+    font-size: 0.89rem !important
+  }
+  .abesum .content .text{
+    font-size: 0.76rem;
+  }
+}
+
+@media(max-width:560px)
+{
+  .caption p{
+
+      font-size: .8rem !important;
+
+
+
+  }
 }

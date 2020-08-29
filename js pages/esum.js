@@ -1,9 +1,6 @@
 // number count for stats, using jQuery animate
 
-$('.count').counterUp({
-    delay: 10,
-    time: 1000
-});
+
 
 //   ----------- day schedule tabs
 $('.slideday a').click(function () {

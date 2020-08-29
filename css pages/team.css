@@ -7,6 +7,24 @@ body{
   align-items: center;
   width: 100%;
 }
+
+.underli {
+    position: relative;
+    display: inline-block;
+}
+.underli::after {
+    content: '';
+    position: absolute;
+
+    /* you can adjust the properties to your liking */
+    bottom: 0;
+
+    left: 12px;
+    width: 95%;
+    border-bottom: 12px solid #3399ff;
+}
+
+
 .parallax h3{
   text-align: center;
   padding: 0;
@@ -15,12 +33,12 @@ body{
   color: #fff;
 
 }
-@media (max-width:420px){
+@media (max-width:500px){
   .parallax h3{
     text-align: center;
     padding: 0;
     margin: 0;
-    font-size: 100px;
+    font-size: 3.5rem;
     color: #fff;}
 }
 
@@ -28,7 +46,7 @@ body{
 /*------------------------------------------------1st vp--------------------------------------------*/
 #bg {
     /* The image used */
-    background-image: url("../image/ourTeam.jpeg");
+    background-image: url("../image/council3.jpg");
 
 
     height: 100vh;
@@ -43,7 +61,47 @@ body{
     background-size: cover;
   }
 
-  
+@media (max-width:500px) {
+  #bg {
+      /* The image used */
+      background-image: url("../image/teamsmall.png");
+
+
+      height: 100vh;
+      background-color: #222;
+
+      position: relative;
+      width: 100%;
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+}
+
+@media (max-width:991px) {
+  #bg {
+      /* The image used */
+      background-image: url("../image/teammed.png");
+
+
+      height: 100vh;
+      background-color: #222;
+
+      position: relative;
+      width: 100%;
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+}
+
+
 
 
 /*-----------------------------------------------team card---------------------------------------------------------*/
@@ -66,13 +124,18 @@ body{
   perspective: 2000px;
 }
 
-@media (max-width:600px){
+@media(max-width:600px)
+{
 
   .flip-card {
-    padding-bottom: 12vh;
-  }
+    background-color: transparent;
+    width: 300px;
+    height: 380px;
 
+    perspective: 2000px;
+  }
 }
+
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -92,6 +155,7 @@ body{
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -268,4 +332,15 @@ transform: translateY(0);
 .list-group-item:hover {
 
  color:  rgb(0, 120, 189);
+}
+
+@media (max-width:600px){
+
+  .flip-card {
+    padding-bottom: 20px;
+  }
+
+
+
+
 }
