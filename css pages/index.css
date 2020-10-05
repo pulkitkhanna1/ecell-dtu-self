@@ -226,6 +226,47 @@ text-align: center;
      font-size: 1.6rem;
 
   }
+  .reg{
+  
+    text-align: center;
+    align-items: center;
+    z-index: 100 !important;
+    
+  
+  }
+  .reg a{
+    text-decoration: none !important;
+    border: 200px bold rgb(255, 255, 255) !important;
+   height: 30px !important;
+   z-index: 100 !important;
+  
+  }
+  
+  .reg button{
+    z-index: 100 !important;
+    display: inline-block;
+    background-image: none;
+    border: none;
+    background-color: transparent;
+    padding-bottom: 7px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 7px 50px;
+    border: 2px solid #0d6fb1;
+    transition: 0.1s ease-in;
+  
+  }
+  .reg button:hover{
+    transform: scale(1.05) !important;
+    transition: 0.1s ease-in;
+    border: 2px solid #ffffff;
+    color: #0d6fb1;
+    box-shadow: inset 0px 0px 10px #0000005e;
+    background: #ffffff;
+    z-index: 100 !important;
+  }
   @media (max-width: 760px){
     .parallax span{
       font-size: 1.3rem;
