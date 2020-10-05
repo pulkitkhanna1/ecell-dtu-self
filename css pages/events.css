@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.mainimgevent{
+     min-height: 50vh;
+    height: 95vh !important; 
+    background-color: #ddd;
+     display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
+.triflags{
+    position: absolute;
+    height: 95vh;
+    width: 100%;
+}
+
+
+.flag4{
+    width: 50%;
+    position: absolute;
+    z-index: 4;
+    top: -70px;
+    left: 0;
+}
+.sil{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.eventtextpg{
+text-align: center;
+font-family: 'Poppins', sans-serif;
+padding: 0;
+}
+
+.eventtextpg span{
+    font-size: 10em;
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    position: relative;
+    text-shadow: -1px 0 0 rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+}
+
+.eventtextpg span:before{
+    content: attr(data-title);
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+
+    top: -6px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform-origin: left;
+    color: #ddd;
+     transition: 0.5s cubic-bezier(0,1.88,.83,.67);
+    transform: rotateY(25deg);
+    z-index: 2; 
+}
+ .eventtextpg span:after{
+    content: attr(data-title);
+    position: absolute;
+    top: -6px;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+
+    transform-origin: left;
+    color: rgba(0,0,0,0.1);
+    transition: 0.5s cubic-bezier(0,1.88,.83,.67);
+    transform: rotateY(5deg) scale(1.07,1) skewY(3deg);
+    z-index: 1;
+    opacity: 0.5;
+}
+
+@media(max-width: 600px){
+
+    .mainimgevent{
+        min-height: 50vh;
+       height: 75vh !important; 
+       background-color: #ddd;
+        display: flex;
+       align-items: center;
+       justify-content: center; 
+       margin: 0;
+       padding: 0;
+   }
+   .triflags{
+       position: absolute;
+       height: 75vh;
+       width: 100%;
+   }
+
+   .flag4{
+    width: 70%;
+    position: absolute;
+    z-index: 4;
+    top: -70px;
+    left: -40px;
+}
+   
+    .eventtextpg span{
+        font-size: 5em;
+        font-family: 'Poppins', sans-serif;
+        color: #222222;
+        position: relative;
+        text-shadow: -1px 0 0 rgba(0, 0, 0, 0.2);
+        top: 0;
+        left: 0;
+    }
+    
+.eventtextpg span:before{
+    content: attr(data-title);
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+
+    top: -3px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform-origin: left;
+    color: #ddd;
+     transition: 0.5s cubic-bezier(0,1.88,.83,.67);
+    transform: rotateY(25deg);
+    z-index: 2; 
+}
+.eventtextpg span:after{
+    content: attr(data-title);
+    position: absolute;
+    top: -3px;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+
+    transform-origin: left;
+    color: rgba(0,0,0,0.1);
+    transition: 0.5s cubic-bezier(0,1.88,.83,.67);
+    transform: rotateY(5deg) scale(1.07,1) skewY(3deg);
+    z-index: 1;
+    opacity: 0.5;
+}
+}
+
+
+.eventtextpg span:hover:before
+{
+    transform: perspective(1000px) rotateY(45deg);
+}
+.eventtextpg span:hover:after
+{
+    transform:  rotateY(0deg) scale(1.11,1) skewY(6deg);
+}
+
+/* =============2nd vp upcoming events====================================== */
+.eventup{
+    background-color: #222222;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.eventcardrow{
+    width: 80%;
+    
+    height: fit-content;
+    margin: 90px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-direction: row;
+
+}
+.oneeventcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    margin: 20px 0;
+
+}
+.upeventimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 0px;
+    background: linear-gradient(145deg, #1f1f1f, #242424);
+    box-shadow:  8px 8px 28px #151515, 
+                 -8px -8px 28px #2f2f2f;
+    width: 300px;
+}
+.upeventimg img{
+    width: 280px;
+    height: 280px;
+}
+.swtexthead{
+    color: rgb(253, 253, 253);
+    font-weight: 700;
+    padding: 5px 0px;
+    font-size: 1.3rem;
+}
+.date{
+    color: rgb(74, 139, 214);
+    font-weight: 600;
+    padding-top: 14px;
+    font-size: 1.2rem;
+}
+.upimagelink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 300px;
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
+/* ==========BENEFITS========== */
+.seconfvpevents{
+    font-family: 'Poppins', sans-serif;
+    height: fit-content;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefitscont{
+    width: 90%;
+    height: fit-content;
+    padding: 30px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.192),
+    -2px -2px 6px rgba(0, 0, 0, 0.089);
+    display: flex;
+    background-color: #9e8fb2;
+background-image: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardrowbene{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    min-height: 400px;
+    height: fit-content;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #bd4f6c15;
+background-image: linear-gradient(326deg, #bd4f6c15 0%, #d7816a15 74%);
+box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.062),
+-2px -2px 9px rgba(0, 0, 0, 0.062);
+
+
+}
+.benefitsbackimg{
+    width: 30%;
+    height: 250px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid rgba(0, 0, 0, 0.781)
+}
+.textbenefits{
+    width: 50%;
+    padding-left: 40px;
+    color: seashell;
+}
+
+
+@media(max-width:991px){
+    .eventcardrow{
+        width: 80%;
+        height: fit-content;
+        margin: 90px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .cardrowbene{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .benefitsbackimg{
+        width: 250px;
+        height: 250px;
+        background-image: url(/image/dtuconnectweb.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .textbenefits{
+        width: 90%;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+    .benefitscont{
+        width: 90%;
+        padding: 30px 0px;
+
+    }
+}
+@media(max-width:600px){
+    .textbenefits{
+        font-size: 3em ;
+    }
+    .textbenefits h3{
+        font-size: 0.5em ;
+    }
+    .textbenefits h4{
+        font-size: 0.35em !important ;
+    }
+}
+@media(min-width:900px){
+
+    .textbenefits h4{
+        font-size: 1.1em !important ;
+        padding-bottom: 9px;
+    }
+
+
+@media(max-width:400px){
+    .textbenefits{
+        font-size: 3em ;
+    }
+    .textbenefits h3{
+        font-size: 0.5em ;
+    }
+    .textbenefits h4{
+        font-size: 0.35em !important ;
+    }
+
+    .cardrowbene{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+    }
+    .benefitscont{
+        width: 100%;
+    }
+    .benefitsbackimg{
+        width: 150px;
+        height: 150px;
+        background-image: url(/image/dtuconnectweb.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
