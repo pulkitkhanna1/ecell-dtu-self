@@ -171,3 +171,29 @@ $('.counting').each(function() {
             return true;
           }
         }
+
+// =======================sponsor strip===========================
+        var swiper = new Swiper('.swiper-container', {
+          loop: true,
+          spaceBetween: 0,
+          fadeEffect: {
+            crossFade: true
+          },
+          autoplay: {
+            delay: 800,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            // when window width is >= 640px
+            780: {
+              slidesPerView: 5,
+              spaceBetween: 40
+            }
+          }
+        });
+
