@@ -173,7 +173,7 @@ $('.counting').each(function() {
         }
 
 // =======================sponsor strip===========================
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.swiperspon', {
           loop: true,
           spaceBetween: 0,
           fadeEffect: {
