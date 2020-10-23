@@ -46,7 +46,7 @@ body{
 /*------------------------------------------------1st vp--------------------------------------------*/
 #bg {
     /* The image used */
-    background-image: url("../image/council3.jpg");
+    background-image: url("../image/team2018.png");
 
 
     height: 100vh;
@@ -64,7 +64,7 @@ body{
 @media (max-width:500px) {
   #bg {
       /* The image used */
-      background-image: url("../image/teamsmall.png");
+      background-image: url("../image/team2018.png");
 
 
       height: 100vh;
@@ -84,7 +84,7 @@ body{
 @media (max-width:991px) {
   #bg {
       /* The image used */
-      background-image: url("../image/teammed.png");
+      background-image: url("../image/team2018.png");
 
 
       height: 100vh;
