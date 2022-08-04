@@ -764,6 +764,14 @@ body {
       filter: grayscale(80%);
 
     }
+    
+    .inibackone{
+      background-image: url(../image/dtuconnectweb.jpg);
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(80%);
+
+    }
       .inibacktwo{
         background-image: url(../image/interndtuweb.jpg);
         background-size: cover;
